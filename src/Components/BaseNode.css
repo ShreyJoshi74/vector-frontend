@@ -1,0 +1,150 @@
+
+.base-node-wrapper {
+  width: 250px;
+  min-height: 100px;
+  border: 1px solid #777;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden; 
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.base-node-header {
+  padding: 8px 12px;
+  font-weight: 600;
+  color: #333;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.base-node-content {
+  padding: 12px;
+  flex-grow: 1; 
+  
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.base-node-content label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  gap: 4px;
+}
+
+
+.base-node-content input[type="text"],
+.base-node-content select,
+.base-node-content textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 14px;
+}
+
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #555;
+  background-color: #fff;
+}
+
+.react-flow__handle-connecting {
+  background-color: #555;
+}
+
+
+
+.sentiment-display {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sentiment-node-positive { background-color: #d1ffd1; }
+.sentiment-node-positive .sentiment-display { color: #008000; }
+
+.sentiment-node-neutral { background-color: #f0f0f0; }
+.sentiment-node-neutral .sentiment-display { color: #555; }
+
+
+.sentiment-node-negative { background-color: #ffd1d1; }
+.sentiment-node-negative .sentiment-display { color: #a00000; }
+
+
+
+.keyword-list ul {
+  padding-left: 20px;
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+.keyword-list li {
+  margin-bottom: 2px;
+}
+
+
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 28px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(22px);
+}

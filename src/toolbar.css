@@ -1,0 +1,54 @@
+
+
+.pipeline-toolbar {
+  width: 100%;
+  padding: 6px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle at top, #15102b 0, #050313 55%, #020109 100%);
+  border-bottom: 1px solid rgba(129, 111, 255, 0.35);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+}
+
+
+
+.draggable-node {
+  cursor: grab;
+  min-width: 70px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  background: #1b1035;
+  border: 1px solid rgba(160, 141, 255, 0.4);
+
+  transition: 120ms ease;
+  user-select: none;
+}
+
+.draggable-node-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #f5ecff;   
+}
+
+
+
+.draggable-node:hover {
+  background: rgba(131, 110, 255, 0.22);
+  border-color: rgba(177, 158, 255, 0.85);
+  transform: translateY(-1px);
+}
+
+.draggable-node:active {
+  cursor: grabbing;
+  transform: scale(0.96);
+  background: rgba(160, 141, 255, 0.38);
+}

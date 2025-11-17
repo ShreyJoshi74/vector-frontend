@@ -1,0 +1,89 @@
+
+.base-node-wrapper.api-node-custom {
+  background: radial-gradient(circle at top, #2a3fff 0, #1a1350 45%, #0a061e 100%);
+  border-radius: 16px;
+  border: 1px solid #445dff;
+  padding: 8px 10px 14px;
+  color: #e7f0ff;
+  min-width: 260px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+
+.base-node-wrapper.api-node-custom .base-node-header {
+  background: linear-gradient(90deg, #edf2ff, #d0dcff);
+  color: #5360ff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 12px 12px 6px 6px;
+  margin-bottom: 8px;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid rgba(81, 103, 255, 0.35);
+}
+
+.base-node-wrapper.api-node-custom .base-node-content {
+  background: #07031a;
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(81, 103, 255, 0.4);
+}
+
+.base-node-wrapper.api-node-custom label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #ced8ff;
+}
+
+.base-node-wrapper.api-node-custom input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #445dff;
+  background: #121032;
+  color: #ffffff;
+  outline: none;
+  font-size: 12px;
+}
+
+.base-node-wrapper.api-node-custom input::placeholder {
+  color: #8b99ff;
+}
+
+.base-node-wrapper.api-node-custom input:focus {
+  border-color: #7ea0ff;
+  box-shadow: 0 0 0 1px rgba(126, 160, 255, 0.5);
+}
+
+.base-node-wrapper.api-node-custom .react-flow__handle {
+  width: 12px;
+  height: 12px;
+  background: #96f7ff;
+  border-radius: 50%;
+  border: 2px solid #0b2038;
+  box-shadow: 0 0 5px rgba(150, 247, 255, 0.8), 0 0 0 2px rgba(55, 121, 255, 0.7);
+  cursor: pointer;
+}
+
+.api-handle-label {
+  position: absolute;
+  font-size: 10px;
+  background: transparent;
+  font-weight: 600;
+  color: #a3c4ff;
+  pointer-events: none;
+}
+
+.api-handle-label.left {
+  left: -45px;
+  transform: translateY(-50%);
+}
+
+.api-handle-label.right {
+  right: -45px;
+  transform: translateY(-50%);
+}

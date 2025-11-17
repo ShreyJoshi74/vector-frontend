@@ -1,0 +1,63 @@
+
+.base-node-wrapper.sentiment-node-custom {
+  background: radial-gradient(circle at top, #7c3bff 0%, #3a1b76 45%, #140623 100%);
+  border-radius: 16px;
+  border: 1px solid #9b6bff;
+  padding: 8px 10px 14px;
+  min-width: 200px;
+  color: #f7ecff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  position: relative;
+  text-align: center;
+}
+
+
+.base-node-wrapper.sentiment-node-custom .base-node-header {
+  background: linear-gradient(90deg, #f7f4ff, #e3d7ff);
+  color: #7b4cff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 7px 10px;
+  border-radius: 12px 12px 6px 6px;
+  margin-bottom: 8px;
+}
+
+.base-node-wrapper.sentiment-node-custom .base-node-content {
+  background: #070217;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgba(155, 107, 255, 0.45);
+}
+
+.sentiment-display {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
+.sentiment-neutral .sentiment-display {
+  color: #d8c4ff;
+}
+
+.sentiment-positive .sentiment-display {
+  color: #89ffb2;
+  text-shadow: 0 0 10px rgba(86, 255, 180, 0.8);
+}
+
+.sentiment-negative .sentiment-display {
+  color: #ff8b9c;
+  text-shadow: 0 0 10px rgba(255, 108, 132, 0.8);
+}
+
+.base-node-wrapper.sentiment-node-custom .react-flow__handle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f2b3ff;
+  border: 2px solid #1d0a38;
+  box-shadow: 0 0 6px rgba(242, 179, 255, 0.9),
+              0 0 0 2px rgba(155, 107, 255, 0.7);
+}

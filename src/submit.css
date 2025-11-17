@@ -1,0 +1,40 @@
+
+.submit-container {
+  width: 100%;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(180deg, #0c081a 0%, #040212 100%);
+  border-top: 1px solid rgba(127, 93, 255, 0.35);
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.45);
+}
+
+
+.submit-btn {
+  padding: 10px 26px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  background: radial-gradient(circle at top, #7437ff 0%, #4a23a1 80%);
+  color: #ffffff;
+  border: 1px solid rgba(180, 150, 255, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 140ms ease;
+  box-shadow: 0 4px 16px rgba(120, 80, 230, 0.35);
+}
+
+.submit-btn:hover {
+  background: radial-gradient(circle at top, #8e57ff 0%, #5c2ee0 90%);
+  border-color: #b08cff;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+  background: #4d2bb2;
+}

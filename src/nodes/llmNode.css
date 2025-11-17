@@ -1,0 +1,70 @@
+/* LLM Node - Purple Theme */
+
+/* Wrapper */
+.base-node-wrapper.llm-node-custom {
+  background: radial-gradient(circle at top, #7c3bff 0%, #3a1b76 45%, #140623 100%);
+  border-radius: 16px;
+  border: 1px solid #9b6bff;
+  padding: 8px 10px 14px;
+  min-width: 260px;
+  color: #ece3ff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+
+/* Header */
+.base-node-wrapper.llm-node-custom .base-node-header {
+  background: linear-gradient(90deg, #f7f4ff, #e3d7ff);
+  color: #7b4cff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 7px 10px;
+  border-radius: 12px 12px 6px 6px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(155, 107, 255, 0.4);
+}
+
+/* Content box */
+.base-node-wrapper.llm-node-custom .base-node-content {
+  background: #070217;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgba(155, 107, 255, 0.45);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e9dcff;
+}
+
+
+.llm-handle-label {
+  position: absolute;
+  font-size: 10px;
+  font-weight: 600;
+  color: #dcd0ff;
+  pointer-events: none;
+}
+
+.llm-handle-label.left {
+  left: -45px;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.llm-handle-label.right {
+  right: -45px;
+  transform: translateY(-50%);
+}
+
+/* Glowing purple handles */
+.base-node-wrapper.llm-node-custom .react-flow__handle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f2b3ff;
+  border: 2px solid #1d0a38;
+  box-shadow: 0 0 6px rgba(242, 179, 255, 0.9),
+              0 0 0 2px rgba(155, 107, 255, 0.7);
+}
